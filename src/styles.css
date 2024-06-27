@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn_primary_global {
+    @apply hover:bg-blue-300 text-blue-300 font-bold hover:text-white w-full h-full py-2.5 border border-blue-300 rounded
+    shadow-md ease-in duration-200 cursor-pointer;
+  }
+
+  .btn_secondary_disable_global {
+    @apply text-gray-300 font-bold w-full h-full py-2.5 border border-gray-300 rounded shadow-md ease-in duration-200;
+  }
+
+  .btn_third_global{
+    @apply hover:bg-yellow-300 text-yellow-300 font-bold hover:text-white w-full h-full py-2.5 border border-yellow-300 rounded
+    shadow-md ease-in duration-200 cursor-pointer;
+  }
+
+  .btn_secondary_global {
+    @apply hover:bg-magenta-300 text-magenta-300 font-bold hover:text-white w-full h-full py-2.5 border
+    border-magenta-300 rounded shadow-md ease-in duration-200;
+  }
+
+  .label_global {
+    @apply block mb-2 text-sm text-blue-600;
+  }
+
+  .input_global {
+    @apply shadow-lg text-sm rounded-lg block w-full p-2 hover:border-blue-300
+    bg-gray-100 border border-gray-200 text-blue-600  outline-blue-300;
+  }
+
+  .input_disable_global {
+    @apply shadow-lg text-blue-600 text-sm rounded-lg block w-full p-2.5 hover:border-gray-400 bg-gray-200;
+  }
+
+  .hr_global {
+    @apply my-2 h-px bg-gray-200 border-0 col-span-12;
+  }
+
+  .checkbox-global {
+    @apply w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-600;
+  }
+
+  .checkbox-content-global {
+    @apply flex items-center w-full p-2.5 rounded-lg border border-gray-200 bg-gray-100 hover:border-blue-300 shadow-lg;
+  }
+
+  .toggle-global {
+    @apply w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer-checked:after:translate-x-full
+    peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px]
+    after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all
+    peer-checked:bg-blue-300;
+  }
+
+  .dropdown-global {
+    @apply text-blue-600 text-sm bg-gray-100 w-full p-2.5 hover:border-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-300
+    rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center;
+  }
+
+  .snackbarClassWarning {
+    --mdc-snackbar-container-color: 0;
+    @apply bg-yellow-300 text-white;
+  }
+
+  .snackbarClassDanger {
+    --mdc-snackbar-container-color: 0;
+    @apply bg-magenta-300 text-white;
+  }
+
+  .snackbarClassSuccess {
+    --mdc-snackbar-container-color: 0;
+    @apply bg-blue-300 text-white;
+  }
+
+  .td_global {
+    @apply py-4 px-6 text-blue-600 font-regular border whitespace-normal break-words text-center;
+  }
+
+  .th_global {
+    @apply py-3 px-3 border text-center whitespace-normal break-words;
+  }
+  .th_mat_global {
+    @apply text-start font-light border-b pl-2    ;
+  }
+  .btn_icon_global {
+    @apply text-magenta-300 font-bold w-full h-full py-2.5  cursor-pointer flex justify-center;
+  }
+}

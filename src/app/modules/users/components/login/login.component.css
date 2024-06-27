@@ -1,0 +1,10 @@
+.border-b-r-r {
+  border-bottom-right-radius: 30%;
+}
+.border-t-r-l {
+  border-top-left-radius: 30%;
+}
+/* En src/styles.css o un archivo CSS global */
+.mirror-effect {
+  transform: scaleX(-1);
+}
