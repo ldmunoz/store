@@ -4,11 +4,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#3490dc',
-        secondary: '#ffed4a',
-        accent: '#e3342f',
-        neutral: '#f6f6f6',
-        base: '#ffffff',
+        primary: '#00B4FF',
+        secondary: '#004763',
+        accent: '#CAF55F',
+        neutral: '#fff',
+        base: '#eee',
+
+        'picton-blue': {
+          '50': '#eff9ff',
+          '100': '#def3ff',
+          '200': '#b6e8ff',
+          '300': '#75d8ff',
+          '400': '#2cc5ff',
+          '500': '#00b4ff', //PRINCIPAL
+          '600': '#008bd4',
+          '700': '#006fab',
+          '800': '#005d8d',
+          '900': '#064e74',
+          '950': '#04314d',
+        },
         gorse: {
           '50': '#fefde8',
           '100': '#fffec2',
